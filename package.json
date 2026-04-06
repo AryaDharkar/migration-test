@@ -1,4 +1,6 @@
 {
+  "name": "migration-test",
+  "version": "1.0.0",
   "scripts": {
     "migrate": "node scripts/migrate.js",
     "build": "npm run migrate && echo Build complete",
@@ -6,5 +8,11 @@
     "migrate:down": "migrate-mongo down",
     "migrate:status": "migrate-mongo status",
     "dev": "node api/index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.4.1",
+    "mongodb": "^6.3.0",
+    "migrate-mongo": "^14.0.7"
   }
 }
