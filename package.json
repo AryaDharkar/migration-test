@@ -1,9 +1,10 @@
 {
   "scripts": {
-    "migrate": "migrate-mongo up",
+    "migrate": "node scripts/migrate.js",
     "build": "npm run migrate && echo Build complete",
     "migrate:up": "migrate-mongo up",
     "migrate:down": "migrate-mongo down",
-    "migrate:status": "migrate-mongo status"
+    "migrate:status": "migrate-mongo status",
+    "dev": "node api/index.js"
   }
 }
