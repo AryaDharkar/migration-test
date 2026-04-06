@@ -2,11 +2,6 @@
   "version": 2,
   "buildCommand": "node scripts/migrate.js",
   "installCommand": "npm install",
-  "functions": {
-    "api/index.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "routes": [
     {
       "src": "/(.*)",
