@@ -1,4 +1,11 @@
 {
-  "buildCommand": "npm run migrate:up && npm run build",
+  "version": 2,
+  "buildCommand": "npm run migrate:up",
+  "installCommand": "npm install",
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 30
+    }
+  },
   "rewrites": [{ "source": "/(.*)", "destination": "/api/index.js" }]
 }
