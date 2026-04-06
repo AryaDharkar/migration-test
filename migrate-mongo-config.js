@@ -7,5 +7,5 @@ module.exports = {
   },
   migrationsDir: "migrations",
   changelogCollectionName: "changelog",
-  migrationFileExtension: ".js",
+  moduleSystem: "commonjs", // ← ADD THIS LINE
 };
