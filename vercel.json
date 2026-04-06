@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "npm run migrate:up",
+  "buildCommand": "node scripts/migrate.js",
   "installCommand": "npm install",
   "builds": [{ "src": "api/index.js", "use": "@vercel/node" }],
   "routes": [{ "src": "/(.*)", "dest": "api/index.js" }]
