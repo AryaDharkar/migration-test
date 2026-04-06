@@ -2,6 +2,7 @@
   "version": 2,
   "buildCommand": "node scripts/migrate.js",
   "installCommand": "npm install",
+  "outputDirectory": ".",
   "routes": [
     {
       "src": "/(.*)",
