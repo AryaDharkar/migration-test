@@ -4,8 +4,8 @@ const { Schema, model } = require("mongoose");
 const subscriptionSchema = new Schema({
   userId: { type: String, required: true },
   plan: { type: String, required: true },
-  startDate: { type: Date, default: null }, // optional for now
-  endDate: { type: Date, default: null },
+  //   startDate: { type: Date, default: null },
+  //   endDate: { type: Date, default: null },
 });
 
 module.exports = model("Subscription", subscriptionSchema);
